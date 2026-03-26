@@ -37,7 +37,8 @@ const AdminSidebar = () => {
           <span className="font-medium">Employees</span>
         </NavLink>
 
-        <NavLink to="/admin-departments" className={navLinkClass}>
+        {/* No 'end' prop for departments link, as it should match any route under /admin-dashboard */}
+        <NavLink to="/admin-dashboard/departments" className={navLinkClass}>
           <FaBuilding className="text-lg" />
           <span className="font-medium">Departments</span>
         </NavLink>
