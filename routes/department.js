@@ -4,6 +4,8 @@ import { addDepartment } from '../controllers/departmentController.js';
 
 const router = express.Router()
 
+router.get('/',authMiddleware,getDepartments)
 router.post('/add', authMiddleware, addDepartment)
 
-expo default router;
+
+export default router;
