@@ -44,6 +44,7 @@ const AddDepartment = () => {
             <input 
               type="text" 
               id="dep_name" 
+              name="dep_name"
               onChange={handleChange}
               placeholder="Enter Department Name" 
               className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
@@ -55,6 +56,7 @@ const AddDepartment = () => {
             </label>
             <textarea
               id="description"
+              name="description"
               placeholder="Description"
               onChange={handleChange}
               className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
